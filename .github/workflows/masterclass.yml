@@ -2,7 +2,7 @@ name: Cluster Masterclass Generation & Direct Cloud Ingest (20 Concurrent Runner
 
 on:
   schedule:
-    - cron: '*/42 * * * *'
+    - cron: '*/20 * * * *'
   workflow_dispatch:
     inputs:
       batch_id:
@@ -12,7 +12,7 @@ on:
       start_index:
         description: 'Global Video Start Index'
         required: false
-        default: '41'
+        default: '1'
       auto_publish:
         description: 'Publish directly to Rumble from Cloud'
         required: false
